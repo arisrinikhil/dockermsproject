@@ -1,27 +1,27 @@
 version : '3.8'
 services:
-  movies:
+  Bus:
     image: arisrinikhil89/paytmbus:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
-  train:
+  Hotel:
     image: arisrinikhil89/paytmhotel:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
-  recharge:
+  Flight:
     image: arisrinikhil89/paytmflight:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
 
-  dth:
+  Billpay:
     image: arisrinikhil89/paytmbillpay:latest
     ports:
       - "84:80"
