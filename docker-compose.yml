@@ -7,21 +7,21 @@ services:
     deploy:
       replicas: 3
 
-  Hotel:
+  Flight:
     image: arisrinikhil89/paytmhotel:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
-  Flight:
+  Train:
     image: arisrinikhil89/paytmflight:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
 
-  Billpay:
+  Hotel:
     image: arisrinikhil89/paytmbillpay:latest
     ports:
       - "84:80"
