@@ -5,25 +5,25 @@ services:
     ports:
       - "81:80"
     deploy:
-      replicas: 3
+      replicas: 5
 
   Flight:
     image: arisrinikhil89/paytmtravel:latest
     ports:
       - "82:80"
     deploy:
-      replicas: 3
+      replicas: 5
 
   Train:
     image: arisrinikhil89/paytminvestment:latest
     ports:
       - "83:80"
     deploy:
-      replicas: 3
+      replicas: 5
 
   Hotel:
     image: arisrinikhil89/paytmbills:latest
     ports:
       - "84:80"
     deploy:
-      replicas: 3
+      replicas: 6
